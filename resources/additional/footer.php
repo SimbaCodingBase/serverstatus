@@ -5,7 +5,7 @@
 				<font color="white"> <!-- style="font-weight: bold;" -->
 					Version: <?= env('VERSION') ?>
 					<br>
-					Made with <i class="fa fa-heart text-danger"></i> by Black-Host
+					Made with <i class="fa fa-heart text-danger"></i> by Simba Buchmann
 
 					<br><br>
 
