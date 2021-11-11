@@ -1,0 +1,5 @@
+<?php
+
+// Bot Updater folgt
+
+?>
