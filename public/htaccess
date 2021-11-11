@@ -1,0 +1,46 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine on
+    RewriteBase /
+
+	#auth
+	RewriteRule ^login?$ index.php?page=auth_login [L]
+	RewriteRule ^register?$ index.php?page=auth_register [L]
+	RewriteRule ^logout?$ index.php?page=auth_logout [L]
+
+	#index
+	RewriteRule ^/?$ index.php?page=index [L]
+	RewriteRule ^dashboard?$ index.php?page=dashboard [L]
+	RewriteRule ^pricing?$ index.php?page=pricing [L]
+    RewriteRule ^service/([A-Za-z0-9-]+)?$ index.php?page=service&id=$1 [NC,L]
+
+    RewriteRule ^issue/([A-Za-z0-9-]+)?$ index.php?page=issue&id=$1 [NC,L]
+	RewriteRule ^issues?$ index.php?page=issues [L]
+
+    RewriteRule ^wartung/([A-Za-z0-9-]+)?$ index.php?page=wartung&id=$1 [NC,L]
+	RewriteRule ^wartungen?$ index.php?page=wartungen [L]
+
+    #debug
+    RewriteRule ^DEBUG?$ index.php?page=DEBUG [L]
+
+    #team
+    RewriteRule ^team/services?$ index.php?page=team_services [L]
+    RewriteRule ^team/servicemanager/([A-Za-z0-9-]+)?$ index.php?page=team_servicemanager&id=$1 [NC,L]
+    RewriteRule ^team/createservices?$ index.php?page=team_createservice [L]
+
+    RewriteRule ^team/createissue?$ index.php?page=team_createissue [L]
+    RewriteRule ^team/editissue/([A-Za-z0-9-]+)?$ index.php?page=team_editissue&id=$1 [NC,L]
+
+    RewriteRule ^team/createteamler?$ index.php?page=team_createteamler [L]
+    RewriteRule ^team/editteamler/([A-Za-z0-9-]+)?$ index.php?page=team_editteamler&id=$1 [NC,L]
+    RewriteRule ^team/teamler?$ index.php?page=team_teamler [L]
+
+    RewriteRule ^team/createwartung?$ index.php?page=team_createwartung [L]
+    RewriteRule ^team/editwartung/([A-Za-z0-9-]+)?$ index.php?page=team_editwartung&id=$1 [NC,L]
+    RewriteRule ^team/settings?$ index.php?page=team_settings [L]
+
+</IfModule>
+<Files 403.shtml>
+    order allow,deny
+    allow from all
+</Files>
