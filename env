@@ -1,0 +1,19 @@
+DEBUG=true
+
+VERSION="2.1.54 (11.11.2021)"
+
+APP_NAME="Statusdemo"
+APP_DOMAIN="statusdemo.black-host.eu"
+
+DB_HOST="localhost"
+DB_NAME="statusdemo"
+DB_USER="statusdemo"
+DB_PASS="sux#111Y"
+
+CRONE_KEY="FLWkjhlHFLWKhejKEWF"
+
+URL="https://statusdemo.black-host.eu/"
+CDN_URL="${URL}assets/style/"
+PIC_URL="${URL}assets/images/"
+
+APP_LOGO="https://black-host.eu/img/server.png"
