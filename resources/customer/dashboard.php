@@ -128,7 +128,7 @@ include BASE_PATH.'app/controller/PageController.php';
 											<td style="text-align: width: 25%" id="title-2" class="">
 												<center>
 													<h4><i class="fa fa-copy text-danger"></i> [;] TEAM</h4> 
-													<h5 class="text-white"><a href="team/team" class="text-white">Klick mich</a></h5>
+													<h5 class="text-white"><a href="team/teamler" class="text-white">Klick mich</a></h5>
 												</center>
 											</td>
 
