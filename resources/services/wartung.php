@@ -57,7 +57,7 @@ $sid = $helper->protect($_GET['id']);
 
 											<td style="text-align: width: 25%" id="title-2" class="">
 												<center>
-													<h4><i class="fa fa-plus text-danger"></i> ERSTELTL AM</h4> 
+													<h4><i class="fa fa-plus text-danger"></i> ERSTELLT AM</h4> 
 													<h5 class="text-white"><?= $row['created_at']; ?></h5>
 												</center>
 											</td>
