@@ -48,15 +48,6 @@ if(isset($_POST['register'])){
         $verify_url = $helper->url().'activate/'.$verify_code;
 
         $username = $helper->xssFix($_POST['username']);
-
-        $body = file_get_contents(BASE_PATH.'public/mail_templates/account/email-confirm.html');
-        $body = str_replace('%verify_url%', $verify_url, $body);
-        $mail_state = sendMail($_POST['email'], $username, $body,'Benutzerkonto aktivieren - '.env('APP_DOMAIN'));
-
-        if($mail_state != true){
-            $error = 'Die E-Mail konnte nicht versendet werden';
-            dd($mail_state);
-        }
     }
 
     if(empty($error)){
